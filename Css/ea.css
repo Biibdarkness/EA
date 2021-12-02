@@ -1,3 +1,156 @@
+*, *::before, *::after {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.full {
+    width: 100%;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid none;
+    background-color: grey;
+
+}
+
+.tableaboutus {
+    width: 80%;
+    border-collapse: collapse;
+    background-color: none;
+    height: 300px;
+    margin: 10%;
+    margin-top: 0px;
+    border-top: 1px solid green;
+    border-bottom: 1px solid green;
+}
+
+.tablet {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid none;
+    background-color: white;
+
+}
+
+.block {
+    border: 1px solid green;
+}
+
+.block-top {
+    border-top: 1px solid green;
+}
+
+.block-bot {
+    border-bottom: 1px solid green;
+}
+
+.td {
+    border-bottom: 1px solid green;
+    width: 50%;
+    padding-top: 1px;
+    padding-right: 20px;
+    padding-bottom: 1px;
+    padding-left: 20px;
+}
+
+.td1 {
+    border-bottom: 1px solid green;
+    width: 20%;
+    padding-top: 1px;
+    padding-right: 20px;
+    padding-bottom: 1px;
+    padding-left: 20px;
+}
+
+.td2 {
+    border-bottom: 1px solid green;
+    width: 80%;
+    padding-top: 1px;
+    padding-right: 20px;
+    padding-bottom: 1px;
+    padding-left: 20px;
+}
+
+.td3 {
+    border-bottom: 1px solid none;
+    width: 10%;
+    padding-top: 1px;
+    padding-right: 20px;
+    padding-bottom: 1px;
+    padding-left: 20px;
+}
+
+.icon {
+    width: 150px;
+}
+
+.text:hover {
+    color: red;
+}
+.texthl{
+    color: red;
+}
+
+/* .icon:hover{
+    background-image: url("Images/skin_care1-removebg-preview-removebg-preview.png");
+} */
+
+
+.hide {
+    /* position: relative;
+    overflow: hidden; */
+    display: none;
+}
+
+/* .icon1:hover + .icon2{
+    display: block;
+}
+
+.icon2{
+    display: none;
+}
+
+.icon1:hover {
+    display: none;
+} */
+
+
+/* .container{
+max-width: 0px;
+margin: 0px auto;
+
+} */
+
 ul li {
     display: inline-block;
+    padding: 10px;
+}
+
+.icons {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: #f4f4f4;
+    float: left;
+    color: red;
+    text-align: center;
+    padding: 10px;
+}
+
+.img-sm {
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
 }
