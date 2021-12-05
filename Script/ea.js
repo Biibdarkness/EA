@@ -93,7 +93,7 @@ lipCares.add(l1);
 categories.push(lipCares);
 
 let functionalFoods = new Category("FunctionalFoods", 5);
-let f1 = new Product(8, "Collagen", "Images/Collagen1.jpg", "VietNam", "400.000vnđ");
+let f1 = new Product(8, "Collagen", "Images/collagen1.jpg", "VietNam", "400.000vnđ");
 functionalFoods.add(f1);
 let f2 = new Product(9, "Collagen 82x", "Images/clg2.jpg", "VietNam", "450.000vnđ");
 functionalFoods.add(f2);
