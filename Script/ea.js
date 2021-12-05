@@ -38,45 +38,68 @@ function Clock() {
     document.getElementById("clockDiv").innerHTML = "" + a + ", ngày " + d + " tháng " + m + " năm " + y + " - " + h + ":" + mi + ":" + se + "";
 }
 
-// function changeImgIn(){
-//     let icon = document.getElementById("icon1");
-//     icon.src = "Images/skin_care1-removebg-preview-removebg-preview.png";
-// }
-// function changeImgOut(){
-//     let icon = document.getElementById("icon1");
-//     icon.src = "Images/skin_care1-removebg-preview-no-color.png";
-// }
+function changeImgIn(id) {
+    let icon = document.getElementById(`icon${id}`);
+    document.getElementById(`label${id}`).style.color = "red";
+    icon.src = `Images/pr${id}r.jpg`;
+
+
+}
+function changeImgOut(id) {
+    let icon = document.getElementById(`icon${id}`);
+    document.getElementById(`label${id}`).style.color = "#59260c";
+    icon.src = `Images/pr${id}.jpg`;
+}
+
+function buy(operator, productId) {
+    let buy = Number(document.getElementById(`buy${productId}`).value);
+    console.log(buy);
+    console.log(productId);
+    if (operator == 1) {
+        buy++;
+
+    } else if (buy > 0) {
+        buy--;
+    }
+    document.getElementById(`buy${productId}`).value = buy;
+}
 
 let categories = [];
 
 let skinCares = new Category("SkinCare", 1);
-let s1 = new Product(1, "laco", "Images/cleanser1.jpg", "China", 100000);
+let s1 = new Product(1, "Laco DNA Toner", "Images/toner2.jpg", "VietNam", "350.000vnđ");
 skinCares.add(s1);
-let s2 = new Product(2, "laco2", "Images/cleanser2.jpg", "Japan", 200000);
+let s2 = new Product(2, "Laco Face Wash", "Images/cleanser2.jpg", "VietNam", "300.000vnđ");
 skinCares.add(s2);
 categories.push(skinCares);
 
 let bodyCares = new Category("BodyCare", 2);
-let b1 = new Product(1, "Sake1", "Images/cleanser2.jpg", "Japan", 200000);
+let b1 = new Product(3, "Laco Body Wash", "Images/st2.jpg", "VietNam", "400.000vnđ");
 bodyCares.add(b1);
-let b2 = new Product(2, "Sake2", "Images/cleanser2.jpg", "China", 400000);
+let b2 = new Product(4, "Laco Skin Exfoliating Scrub", "Images/srm3.jpg", "VietNam", "300.000vnđ");
 bodyCares.add(b2);
 categories.push(bodyCares);
 
 let hairCares = new Category("HairCare", 3);
-let h1 = new Product(1, "Amla1", "Images/cleanser2.jpg", "Japan", 200000);
+let h1 = new Product(5, "Laco Shampoo", "Images/dg1.jpg", "VietNam", "300.000vnđ");
 hairCares.add(h1);
+let h2 = new Product(6, "Laco AmConditioning", "Images/dg4.jpg", "VietNam", "300.000vnđ");
+hairCares.add(h2);
 categories.push(hairCares);
 
 let lipCares = new Category("LipCare", 4);
-let l1 = new Product(1, "Laco1", "Images/cleanser2.jpg", "Japan", 200000);
+let l1 = new Product(7, "Laco Lipstick", "Images/s2.jpg", "VietNam", "200.000vnđ");
 lipCares.add(l1);
 categories.push(lipCares);
 
 let functionalFoods = new Category("FunctionalFoods", 5);
-let f1 = new Product(1, "Collagen", "Images/cleanser2.jpg", "Japan", 200000);
+let f1 = new Product(8, "Collagen", "Images/Collagen1.jpg", "VietNam", "400.000vnđ");
 functionalFoods.add(f1);
+let f2 = new Product(9, "Collagen 82x", "Images/clg2.jpg", "VietNam", "450.000vnđ");
+functionalFoods.add(f2);
 categories.push(functionalFoods);
+
+
 
 
 
@@ -103,7 +126,6 @@ function show() {
     let showData = "";
     showData += `<table class="tablet" >`;
     categories.forEach(function (cat, index) {
-
         showData += `  <tr>
         <td class="td3 " rowspan="2">
             <h1>${cat.name}</h1>
@@ -117,17 +139,19 @@ function show() {
         showData += "<tr>";
         showData += "<td colspan='2'>";
 
-        showData += '<br><hr><br><table class="tablet center" ><thead><tr><th>#ID</th><th>Name</th><th>Picture</th><th>Origin</th><th>Price</th></tr>';
+        showData += '<br><hr><br><table class="tablet center" ><thead><tr><th>Name</th><th>Picture</th><th>Origin</th><th>Price</th><th>Buy</th></tr>';
         cat.products.forEach(function (product, index) {
             showData += ` 
                         <tr id='tr_${product.productId}'>
-                            <td >${product.productId}</td>
                             <td>${product.name}</td>
                             <td >
                                 <img class='img-sm' src='${product.pictures}'>
                             </td>
                             <td class="text-center">${product.origin}</td>
                             <td class="text-center">${product.price}</td>
+                            <td class="text-center"><input type="text" name="" id="buy${product.productId}" value="0">
+                            <button id="plus" onclick="buy(1,${product.productId})">+</button>
+                            <button id="sub" onclick="buy(2,${product.productId})">-</button></td>
                         </tr>`;
         });
         showData += '</table><br><hr><br>';
@@ -137,6 +161,12 @@ function show() {
     showData += "</table>";
     document.getElementById("data").innerHTML = showData;
 }
+
+function setId(id) {
+    localStorage.setItem("id", id);
+    location.href = "product.html";
+}
+
 function ready() {
     show();
     // showProduct();

@@ -5,17 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skin Care</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="Css/ea.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <table class="table">
-                <tr class="tr">
-                    <td class="td">
+            <table class="tablet">
+                <tr class="tr" style="height: auto;">
+                    <td class="td" style="height: 10px;">
                         <ul>
                             <li>
-                                L'Eau et L'Arbre
+                                <div>
+                                    <a id="top" href="index.html" class="text">L'Eau et L'Arbre</a>
+                                </div>
+
                             </li>
                         </ul>
                     </td>
@@ -27,13 +31,13 @@
                                     <img style="width: 12px; vertical-align: initial;"
                                         src="https://theme.hstatic.net/1000365849/1000614631/14/dienthoaido.svg?v=105"
                                         alt="">
-                                    <a href="callto:0971789396">0971789396</a>
+                                    <a href="callto:0971789396" class="text">0971789396</a>
                                 </li>
                                 <li class="right">
                                     <img style="width: 16px; vertical-align: initial;"
                                         src="https://theme.hstatic.net/1000365849/1000614631/14/maildo.svg?v=105"
                                         alt="">
-                                    <a href="mallto:nhaea2111@gmail.com">nhaea2111@gmail.com</a>
+                                    <a href="mallto:nhaea2111@gmail.com" class="text">nhaea2111@gmail.com</a>
                                 </li>
                                 <li class="right">
                                     <div class="right">
@@ -45,6 +49,11 @@
                                                 alt="">
                                         </button>
                                     </div>
+                                </li>
+                                <li>
+                                    <img style="width: 30px; vertical-align: initial;"
+                                        src="//theme.hstatic.net/1000365849/1000614631/14/giohang.svg?v=105" alt="">
+
                                 </li>
                                 <!-- <li class="right">
                                     <div class="right">
@@ -62,24 +71,28 @@
                 <table class="table">
                     <tr>
                         <td class="td1 center hover">
-                            <div >
-                                <button>
+                            <div>
+                                <div>
                                     <a href="aboutUs.html" class="text">ABOUT US</a>
-                                </button>
+                                </div>
                             </div>
                         </td>
                         <td class="td1 center hover">
                             <div class="text">
-                                ADDRESS
+                                <div>
+                                    <a href="address.html" class="text">ADDRESS</a>
+                                </div>
+
                             </div>
                         </td>
                         <td class="td1 center hover">
                             <div>
-                                <button>
-                                    <a href="index.html" class="text"><img class="icon" src="Images/logo.jpg" alt=""></a>
-                                </button>
+                                <div>
+                                    <a href="index.html" class="text"><img class="icon" src="Images/logo.jpg"
+                                            alt=""></a>
+                                </div>
                             </div>
-                            
+
                         </td>
                         <td class="td1 center hover">
                             <div class="text">
@@ -100,72 +113,61 @@
                     <tr>
                         <td class="center">
                             <div>
-                                <div>
-                                    <img id="icon1" class="icon" onmouseover="changeImgIn()" onmouseout="changeImgOut()"
-                                        src="Images/skin care.jpg" alt="">
-                                </div>
-                                <!-- <div class="icon icon1">
-                                    <img id="icon1"  onmouseover="changeImgIn()"
-                                        src="Images/skin_care1-removebg-preview-no color.png" alt="">
-                                </div>
-                                <div class="icon icon2">
-
-                                    <img id="icon2"  onmouseout="changeImgOut()"
-                                        src="Images/skin_care1-removebg-preview-removebg-preview.png" alt="">
-                                </div> -->
-
-                                <!-- <div class="icon icon2">
-
-                                    <img id="icon2"  onmouseout="changeImgOut()"
-                                        src="Images/skin_care1-removebg-preview-removebg-preview.png" alt="">
-                                </div> -->
-
-                            </div>
-                            <div id="skin">
-                                Skin care
-                            </div>
-                        </td>
-                        <td class="center">
-                            <div>
-                                <div>
-                                    <img id="icon1" class="icon" onmouseover="changeImgIn()" onmouseout="changeImgOut()"
-                                        src="Images/skin care.jpg" alt="">
-                                </div>
-                                <div>
-                                    Body care
+                                <div onclick="setId(1)" onmouseover="changeImgIn(1)" onmouseout="changeImgOut(1)">
+                                    <img id="icon1" class="icon" src="Images/pr1.jpg" alt="">
                                 </div>
                             </div>
-                        </td>
-                        <td>
-                            <div class="center">
+                            <div onclick="setId(1)" onmouseover="changeImgIn(1)" onmouseout="changeImgOut(1)">
                                 <div>
-                                    <img id="icon1" class="icon" onmouseover="changeImgIn()" onmouseout="changeImgOut()"
-                                        src="Images/skin care.jpg" alt="">
-                                </div>
-                                <div class="center">
-                                    Hair care
+                                    <a class="text" id="label1">Skin Care</a>
                                 </div>
                             </div>
                         </td>
                         <td class="center">
                             <div>
-                                <div>
-                                    <img id="icon1" class="icon" onmouseover="changeImgIn()" onmouseout="changeImgOut()"
-                                        src="Images/skin care.jpg" alt="">
+                                <div onclick="setId(2)" onmouseover="changeImgIn(2)" onmouseout="changeImgOut(2)">
+                                    <img id="icon2" class="icon" src="Images/pr2.jpg" alt="">
                                 </div>
+                            </div>
+                            <div onclick="setId(2)" onmouseover="changeImgIn(2)" onmouseout="changeImgOut(2)">
                                 <div>
-                                    Lip care
+                                    <a class="text" id="label2">Body Care</a>
                                 </div>
                             </div>
                         </td>
                         <td class="center">
                             <div>
-                                <div>
-                                    <img id="icon1" class="icon" onmouseover="changeImgIn()" onmouseout="changeImgOut()"
-                                        src="Images/skin care.jpg" alt="">
+                                <div onclick="setId(3)" onmouseover="changeImgIn(3)" onmouseout="changeImgOut(3)">
+                                    <img id="icon3" class="icon" src="Images/pr3.jpg" alt="">
                                 </div>
+                            </div>
+                            <div onclick="setId(3)" onmouseover="changeImgIn(3)" onmouseout="changeImgOut(3)">
                                 <div>
-                                    Functional foods
+                                    <a class="text" id="label3">Body Care</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="center">
+                            <div>
+                                <div onclick="setId(4)" onmouseover="changeImgIn(4)" onmouseout="changeImgOut(4)">
+                                    <img id="icon4" class="icon" src="Images/pr4.jpg" alt="">
+                                </div>
+                            </div>
+                            <div onclick="setId(4)" onmouseover="changeImgIn(4)" onmouseout="changeImgOut(4)">
+                                <div>
+                                    <a class="text" id="label4">Body Care</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="center">
+                            <div>
+                                <div onclick="setId(5)" onmouseover="changeImgIn(5)" onmouseout="changeImgOut(5)">
+                                    <img id="icon5" class="icon" src="Images/pr5.jpg" alt="">
+                                </div>
+                            </div>
+                            <div onclick="setId(5)" onmouseover="changeImgIn(5)" onmouseout="changeImgOut(5)">
+                                <div>
+                                    <a class="text" id="label5">Body Care</a>
                                 </div>
                             </div>
                         </td>
@@ -181,6 +183,94 @@
     <div id="detail"> 
         
     </div>
+    <footer>
+        <table class="tablef">
+            <tr class="center textf">
+                <td>L'Eau et L'Arbre Brand</td>
+                <td>CẬP NHẬT THÔNG TIN</td>
+                <td>BẠN NÊN XEM</td>
+            </tr>
+            <tr class="center textf">
+                <td rowspan="2">
+                    <ul>
+                        <li class="icons">
+                            <i class="fa fa-location-dot"></i>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="address.html" class="textf1">Store: 29 Võ Thị Sáu.</a>
+                            </div>
+
+                        </li>
+                    </ul>
+
+                </td>
+                <td rowspan="2"> Cập nhật những sản phẩm mới nhất từ L'Eau et L'Arbre Brand nhé!</td>
+                <td>
+                    <div>
+                        <a href="aboutUs.html" class="textf1">Giới thiệu</a>
+                    </div>
+                </td>
+            </tr>
+            <tr class="center textf">
+                <td>Phương thức giao hàng</td>
+            </tr>
+            <tr class="center textf">
+                <td rowspan="2">
+                    <ul>
+                        <li class="icons">
+                            <i class="fa fa-phone"></i>
+                        </li>
+                        <li> Hotline:
+                            <a href="callto:0971789396"> 0971789396</a>
+                        </li>
+                    </ul>
+                </td>
+                <td rowspan="3" style="text-align: center;">
+                    <ul>
+                        <li class="icons">
+                            <a
+                                href="https://www.facebook.com/EA-S%E1%BB%A9c-kh%E1%BB%8Fe-v%C3%A0-S%E1%BA%AFc-%C4%91%E1%BA%B9p-103628628820105"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li class="icons">
+                            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li class="icons ">
+                            <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
+                        </li>
+                    </ul>
+                </td>
+                <td>Phương thức thanh toán</td>
+            </tr>
+            <tr class="center textf">
+
+                <td>Chính sách bảo hành</td>
+            </tr>
+            <tr class="center textf">
+                <td rowspan="2">
+                    <ul>
+                        <li class="icons ">
+                            <i class="fa fa-envelope"></i>
+                        </li>
+                        <li>
+                            <a href="mallto:nhaea2111@gmail.com">nhaea2111@gmail.com</a>
+                        </li>
+                    </ul>
+                </td>
+
+                <td>Chính sách đổi trả</td>
+            </tr>
+            <tr class="center textf">
+                <td>
+                    <div id="clockDiv"></div>
+                </td>
+                <td>Chính sách bảo mật</td>
+            </tr>
+
+
+        </table>
+    </footer>
     <script src="Script/ea.js"></script>
     <script src="Script/product.js"></script>
 </body>
