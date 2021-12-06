@@ -1,6 +1,4 @@
 let id = 0;
-
-
 function showdetail(i) {
     let catId = -1;
     if (i === 0) { 

@@ -135,7 +135,6 @@ function show() {
     <tr>
         <td class="block-top"></td>
     </tr>`;
-
         showData += "<tr>";
         showData += "<td colspan='2'>";
 
