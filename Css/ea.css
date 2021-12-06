@@ -6,6 +6,10 @@
     text-align: center;
 }
 
+.left{
+    text-align: start;
+}
+
 .full {
     width: 100%;
 }
@@ -43,7 +47,8 @@
     height: 10px;
     border-collapse: collapse;
     border: 1px solid white;
-    background-color: #59260c;
+    background-color: #212121;
+    
     
 
 }
@@ -107,17 +112,17 @@
 }
 
 .textf {
-    color: white;
+    color: #999999;
     text-decoration: none
 }
 
 .textf1 {
-    color: white;
+    color: #999999;
     text-decoration: none
 }
 
 .textf1:hover {
-    color: red;
+    color: #c7572b;
 }
 
 .text:hover {
@@ -126,6 +131,7 @@
 
 .texthl {
     color: red;
+    text-decoration: none
 }
 
 /* .icon:hover{

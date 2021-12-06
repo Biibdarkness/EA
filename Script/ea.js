@@ -18,8 +18,8 @@ class Product {
         this.price = price;
     }
 }
-var myVar = setInterval(function () { Clock() });
-function Clock() {
+var myVar = setInterval(function () { clock() });
+function clock() {
     a = new Date();
     w = Array("Chủ Nhật", "Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy");
     var a = w[a.getDay()],
@@ -93,9 +93,9 @@ lipCares.add(l1);
 categories.push(lipCares);
 
 let functionalFoods = new Category("FunctionalFoods", 5);
-let f1 = new Product(8, "Collagen", "Images/collagen1.jpg", "VietNam", "400.000vnđ");
+let f1 = new Product(8, "Collagen", "Images/collagen1.jpg", "Japan", "400.000vnđ");
 functionalFoods.add(f1);
-let f2 = new Product(9, "Collagen 82x", "Images/clg2.jpg", "VietNam", "450.000vnđ");
+let f2 = new Product(9, "Collagen 82x", "Images/clg2.jpg", "Japan", "450.000vnđ");
 functionalFoods.add(f2);
 categories.push(functionalFoods);
 
